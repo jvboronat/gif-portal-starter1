@@ -1,5 +1,4 @@
 .App {
-  height: 100vh;
   background-color: #1a202c;
   overflow: scroll;
   text-align: center;
@@ -105,7 +104,7 @@
 }
 
 .gif-item img {
-  width: 100%;
+  width: 500px;
   height: 300px;
   border-radius: 10px;
   object-fit: cover;
@@ -127,4 +126,53 @@
 
 .connected-container button {
   height: 50px;
+}
+
+.gif-vote {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gif-vote img {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;  
+}
+
+.no-cursor {
+  cursor: default;
+}
+
+.no-cursor img {
+  cursor: default;
+ 
+}
+
+.img-like-counter {
+  height: 25px;
+  width: 25px;
+  background-image: url('./assets/like.png') ;
+  background-repeat: no-repeat;
+  color: white;
+
+  padding: 0;
+
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  justify-self: center;
+
+  position: absolute;
+  top: 5%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
